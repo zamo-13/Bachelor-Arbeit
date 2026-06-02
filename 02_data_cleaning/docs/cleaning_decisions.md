@@ -117,3 +117,23 @@ For each non-trivial cleaning action, record:
 - Validation check performed:
 	- Mapping table saved to 03_harmonization/taxonomy_mapping_v1_v2.csv.
 	- Anomaly cases will be checked during harmonization validation for unmapped values.
+
+### Decision ID: CD-20260602-01
+
+- Date: 2026-06-02
+- Dataset / File: C:\BA_Data\tiktok_de_2025.parquet; C:\BA_Data\x_de_2025.parquet
+- Variable(s) affected: application_date
+- Problem observed:
+	- The working parquets include non-2025 records from earlier or later dates, which fall outside the thesis scope.
+- Decision taken: Filter to application_date between 2025-01-01 and 2025-12-31 inclusive and overwrite the working parquet files after confirming raw dump backups exist.
+- Rationale (methodological reason):
+	- The thesis scope is explicitly limited to the 2025 calendar year.
+	- Enforcing the date window ensures temporal comparability across platforms and avoids unintended inclusion of out-of-scope records.
+- Expected impact on analysis:
+	- Positive: aligns datasets to the defined study period and avoids temporal leakage.
+	- Risk: none, as out-of-scope records are excluded by design and raw dumps remain intact.
+- Reversible: Yes (raw dumps preserved under C:\BA_Data\tiktok___full and C:\BA_Data\x___full)
+- Code reference (notebook/script + section): 02_data_cleaning/scripts/apply_date_filter.py (backup check, date filter, in-place write)
+- Validation check performed:
+	- Script requires raw dump backup folders to exist before overwriting.
+	- Script prints dropped-row counts per platform before writing.

@@ -114,6 +114,9 @@ def main() -> None:
     mapping_df = load_mapping(MAPPING_PATH)
 
     for platform, input_path in INPUTS.items():
+        if platform != "x":
+            print(f"Skipping {platform} (already harmonized)")
+            continue
         output_path = OUTPUTS[platform]
         if not input_path.exists():
             print(f"WARNING: missing input file {input_path}")

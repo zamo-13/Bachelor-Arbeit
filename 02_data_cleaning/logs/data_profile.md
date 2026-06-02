@@ -56,3 +56,28 @@ Example entry format:
   - Output file written: C:\BA_Data\tiktok_de_2025.parquet
   - Output file written: C:\BA_Data\x_de_2025.parquet
   - Number of original files deleted: 1488
+
+- Date: 2026-06-02
+- Description: 2025-date-range filter applied (apply_date_filter.py)
+- Result:
+  - TikTok rows before 2025 date filter: 999,079,277
+  - TikTok rows dropped (outside 2025-01-01 to 2025-12-31): 1,391,010
+  - TikTok rows after 2025 date filter: 997,688,267
+  - X rows before 2025 date filter: 183,324
+  - X rows dropped (outside 2025-01-01 to 2025-12-31): 3
+  - X rows after 2025 date filter: 183,321
+  - Files overwritten in place: C:\BA_Data\tiktok_de_2025.parquet, C:\BA_Data\x_de_2025.parquet
+  - Harmonized files preserved (unchanged)
+
+- Date: 2026-06-02
+- Description: Harmonized category and date mapping (harmonize_categories_polars.py)
+- Result:
+  - TikTok rows input to harmonization: 997,688,267
+  - TikTok output file: tiktok_de_2025_harmonized.parquet (18.3 GB)
+  - TikTok output timestamp: 13:26:28
+  - X rows input to harmonization: 183,321
+  - X output file: x_de_2025_harmonized.parquet (3.66 MB)
+  - X output timestamp: newly generated
+  - Columns added: category_harmonized, application_date_harmonized
+  - Original columns preserved: category_raw, application_date_raw
+  - Validation: Both platforms passed (no unmapped categories)
