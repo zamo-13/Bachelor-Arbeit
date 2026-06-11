@@ -1,0 +1,6 @@
+platform_name,period_label,period_start,period_end,amar_de,api_version,legal_basis,source_note
+TikTok,H1,2025-01-01,2025-06-30,25700000,v1,Art. 42(3) DSA,PDF Report Annex H; rounded to nearest 100k
+TikTok,H2,2025-07-01,2025-12-31,27300000,v2,Art. 42(3) DSA,CSV file 10_AMAR; rounded to nearest 100k
+X,Q1,2025-01-01,2025-03-31,15598407,v1,Art. 42(3) DSA,Total (logged-in + logged-out)
+X,Q2,2025-04-01,2025-06-30,14929142,v1,Art. 42(3) DSA,Total (logged-in + logged-out)
+X,H2,2025-07-01,2025-12-31,9511180,v2,Art. 42(3) DSA,Total (Value column)

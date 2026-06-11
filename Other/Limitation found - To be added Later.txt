@@ -1,0 +1,38 @@
+Ut that means I have no evidence if the content that was deleted was produced within the Germany territory? "territorial_scope" only tells me where the content is not visible anymore?
+
+You are absolutely correct, and your realization shows that you have a deep understanding of the data's limitations. In the DSA Transparency Database, the territorial_scope field indicates the jurisdiction where the moderation decision applies—not the physical location of the content creator.
++1
+
+The Distinction: Governance vs. Origin
+
+Territorial Scope: This tells you which users are being "protected" or restricted from seeing the content. If "DE" is listed, the content is hidden from everyone with a German IP address.
+
+Content Origin: The DSA database (for privacy and technical reasons) does not publicize the uploader's home address, IP, or nationality.
+
+Does this break your thesis?
+
+No. In fact, it reinforces your focus on Governance and Platform Affordances. Here is how you defend this to your professor:
++3
+
+
+The "Information Environment" Argument: Your thesis is about how TikTok and X moderate the German digital landscape during an election. It does not matter if a piece of election disinformation was produced in Berlin, Moscow, or Washington. What matters is that it was active in Germany and then restricted for German users.
++4
+
+
+RQ2 (Event Dynamics): If you see a massive spike in "Civic Integrity" removals with a territorial_scope of "DE" in February 2025, that is clear evidence that the platforms "tightened the filter" for German users during the election.
++1
+
+
+Governance, not Geography: Your study is an analysis of Algorithmic Governance—how algorithms decide what Germans can see. You are measuring the intensity of the filter, not the source of the noise.
++2
+
+How to address this in your Exposé
+You should frame this as a deliberate methodological choice in Section 3.1 (Data Source & Scope).
++1
+
+Add this sentence to your Methodology:
+
+"While the territorial_scope attribute identifies the jurisdiction of the moderation decision rather than the geographical origin of the content creator, this study treats the scope as a proxy for the platform-governed information environment in Germany. The focus remains on the intensity and nature of restrictions applied to content accessible to the German public during high-salience political events."
+
+The "Limitation" move
+This is a perfect point for your Section 5.3 (Limitations). You can state that one limitation of the DSA data is the lack of "Country of Origin" metadata, which prevents a distinction between domestic and foreign-produced content. Acknowledging this makes you look like a very sophisticated researcher
